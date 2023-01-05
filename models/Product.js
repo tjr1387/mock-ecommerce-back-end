@@ -30,6 +30,7 @@ Product.init(
                 isNumeric: true,    // perhaps could be 'isInt'
             },
         },
+        // Foreign key, linked to Category's ID
         category_id: {
             type: DataTypes.INTEGER,
             references: {

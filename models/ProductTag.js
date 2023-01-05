@@ -11,6 +11,7 @@ ProductTag.init(
         primaryKey: true,
         autoIncrement: true,
     },
+    // Foreign key, linked to Product's ID
     product_id: {
         type: DataTypes.INTEGER,
         references: {
@@ -18,6 +19,7 @@ ProductTag.init(
             key: 'id',
         },
     },
+    // Foreign key, linked to Tag's ID
     tag_id: {
         type: DataTypes.INTEGER,
         references: {

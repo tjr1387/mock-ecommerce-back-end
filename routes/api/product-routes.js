@@ -3,6 +3,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
 
+
 // GET all products, with assoc. categories and tags
 router.get('/', async (req, res) => {
     try {
@@ -31,14 +32,15 @@ router.get('/:id', async (req, res) => {
 }
 });
 
-// create new product
+// CREATE a new product
 router.post('/', (req, res) => {
   /* req.body should look like this...
+    // Tyler's note: I added double-quotes so you can literally just copy this to your JSON test request in Insomnia
     {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
+      "product_name": "Basketball",
+      "price": "200.00",
+      "stock": "3",
+      "tagIds": [1, 2, 3, 4]
     }
   */
   Product.create(req.body)
@@ -63,7 +65,7 @@ router.post('/', (req, res) => {
     });
 });
 
-// update product
+// UPDATE a product
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
