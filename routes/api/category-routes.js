@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
-// find [READ] all categories, with assoc. products
+// GET all categories, with assoc. products
 router.get('/', async (req, res) => {
     try {
         const ctgyData = await Category.findAll({
@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// find [READ] one category by ID, with assoc. products
+// GET one category by ID, with assoc. products
 router.get('/:id', async (req, res) => {
     try {
         const ctgyData = await Category.findByPk(req.params.id, {
