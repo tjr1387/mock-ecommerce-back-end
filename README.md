@@ -23,6 +23,11 @@ Once the dependencies have been installed, and the DB program has been synced wi
 
 Link to video: https://drive.google.com/file/d/11nXoOeJyvw8CBdxRpNpfdMWGx7ErUmJJ/view
 
+Screenshots (a GET all for each model):
+![GET all products](./assets/images/GETallproducts.png?raw=true "Getting all products using the seeded data")
+![GET all categories](./public/assets/images/GETallcategories.png?raw=true "Getting all categories using the seeded data")
+![GET all tags](./public/assets/images/GETalltags.png?raw=true "Getting all tags using the seeded data")
+
 ## Credits
 
 GitHub user 'andreasonny83' for a nice boilerplate '.gitignore' file, and as always, a few of our course exercises; great examples off of whcih to build!
