@@ -25,8 +25,8 @@ Link to video: https://drive.google.com/file/d/11nXoOeJyvw8CBdxRpNpfdMWGx7ErUmJJ
 
 Screenshots (a GET all for each model):
 ![GET all products](./assets/images/GETallproducts.png?raw=true "Getting all products using the seeded data")
-![GET all categories](./public/assets/images/GETallcategories.png?raw=true "Getting all categories using the seeded data")
-![GET all tags](./public/assets/images/GETalltags.png?raw=true "Getting all tags using the seeded data")
+![GET all categories](./assets/images/GETallcategories.png?raw=true "Getting all categories using the seeded data")
+![GET all tags](./assets/images/GETalltags.png?raw=true "Getting all tags using the seeded data")
 
 ## Credits
 
